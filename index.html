@@ -2,9 +2,139 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Fstrk Style-Guide</title>
+	<title>Fstrk Style Guide</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="styles/styleguide-page.css" rel="stylesheet">
 </head>
 <body>
-	<h1>Style Guide</h1>
+	<section>
+		<div class="header">
+			<h1>Основы</h1>
+		</div>
+		<div class="content column">
+			<section>
+				<div class="header">
+					<h2>Шрифты</h2>
+				</div>
+				<div class="content">
+					<div class="showcase row">
+						<code>font-family: "Open Sans", "Helvetica", "Calibri", "Arial", sans-serif;</code>
+					</div>
+				</div>
+			</section>
+
+			<section id="colors">
+				<div class="header">
+					<h2>Палитра</h2>
+				</div>
+				<div class="content column">
+					<p>Нажмите на блок для копирования HEX значения цвета</p>
+					<div class="showcase row">
+						<div class="color bg-white" onclick="navigator.clipboard.writeText('#f7f7f7');">Белый<br>.bg-white<br>#f7f7f7</div>
+						<div class="color bg-black" onclick="navigator.clipboard.writeText('#333333');">Черный<br>.bg-black<br>#333333</div>
+						<div class="color bg-primary" onclick="navigator.clipboard.writeText('#00a0ff');">Основной<br>.bg-primary<br>#00a0ff</div>
+						<div class="color bg-success" onclick="navigator.clipboard.writeText('#11cd86');">Упешно<br>.bg-success<br>#11cd86</div>
+						<div class="color bg-error" onclick="navigator.clipboard.writeText('#f70044');">Ошибка<br>.bg-error<br>#f70044</div>
+						<div class="color bg-warning" onclick="navigator.clipboard.writeText('#f6d600');">Предупреждение<br>.bg-warning<br>#f6d600</div>
+						<div class="color bg-info" onclick="navigator.clipboard.writeText('#72ceff');">Информация<br>.bg-info<br>#72ceff</div>
+					</div>
+					<p>Соотествующие цветовые классы присутсвуют и для текста</p>
+					<div class="showcase row">
+						<div class="text-color bg-black text-white"">Белый<br>.text-white<br>#f7f7f7</div>
+						<div class="text-color bg-white text-black">Черный<br>.text-black<br>#333333</div>
+						<div class="text-color bg-white text-primary">Основной<br>.text-primary<br>#00a0ff</div>
+						<div class="text-color bg-white text-success">Упешно<br>.text-success<br>#11cd86</div>
+						<div class="text-color bg-white text-error">Ошибка<br>.text-error<br>#f70044</div>
+						<div class="text-color bg-white text-warning">Предупреждение<br>.text-warning<br>#f6d600</div>
+						<div class="text-color bg-white text-info">Информация<br>.text-info<br>#72ceff</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="header">
+					<h2>Сетка и семантика</h2>
+				</div>
+				<div class="content">
+					<section id="grid-flex">
+						<div class="header">
+							<h3>Сетка</h3>
+						</div>
+						<div class="content column">
+							<p>
+								Для верстки предусмотрено два вида сетки: <b>flexbox</b><del> и <b>grid</b> </del>
+							</p>
+							<h4>Flexbox</h4>
+							<p>Данный вид сетки использует контейнер <code>.f-container</code> 
+								и внутри него классы 
+								<code>.f-1</code>
+								<code>.f-2</code>
+								<code>.f-3</code>
+								<code>.f-4</code>
+							</p>
+							<p>Для этого вида сетки существуют вспомогательные классы <code>.row</code> и <code>.column</code> преобразующие формат представления соответсвенно</p>
+							<div class="showcase column">
+								<span><b>div.f-container</b> (или <b>div.f-container.row</b>)</span>
+								<div class="f-container row colorized-f-container">
+									<div class="f-1 bg-white">div.f-1.bg-white</div>
+									<div class="f-2 bg-success">div.f-2.bg-success</div>
+									<div class="f-3 text-warning">div.f-3.text-warning</div>
+									<div class="f-4 bg-black text-info">div.f-4.bg-black.text-info</div>
+								</div>
+								<br>
+								<b>div.f-container.column</b>
+								<div class="f-container column colorized-f-container">
+									<div class="f-1">div.f-1</div>
+									<div class="f-2">div.f-2</div>
+									<div class="f-3">div.f-3</div>
+									<div class="f-4">div.f-4</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="grid-flex">
+						<div class="header">
+							<h3>Семантика</h3>
+						</div>
+						<div class="content column">
+							<div class="showcase-column">
+								<p>
+									Для семантического разделения блоков должен использоваться класс <code>.block</code>
+								</p>
+								<div class="f-container row">
+									<div class="f-1 block">
+										<h4>Блок 1 (div.f-1.block)</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum neque asperiores officia est tempore aliquam ad sapiente hic pariatur, eius eos ullam consectetur, doloremque porro possimus, debitis error illo facilis.</div>
+										<div>Blanditiis amet neque vitae saepe, atque deserunt quaerat velit, unde vero, nemo quasi labore? Odit voluptatibus quasi aut neque porro fugiat ullam laudantium blanditiis, quam temporibus et, doloribus, accusamus expedita.</div>
+									</div>
+									<div class="f-1 block">
+										<h4>Блок 2 (div.f-1.block)</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nesciunt explicabo omnis quidem qui in deserunt quo, iste amet, quisquam veritatis, repellendus facilis magni consequatur, quis harum nemo itaque ratione.</div>
+										<div>Aspernatur maxime saepe suscipit et tenetur quia ullam sapiente qui? Nam voluptatibus, accusamus aspernatur illum beatae fuga doloribus, velit dignissimos sint incidunt molestiae praesentium recusandae ex, suscipit dolore optio, ipsum.</div>
+									</div>
+								</div>
+							</div>
+							<div class="showcase-column">
+								<p>
+									Блоки также поддерживают цветовые нотации
+								</p>
+								<div class="f-container column">
+									<div class="f-1 block bg-black text-error">
+										<h4>Блок 1 (div.f-1.block.bg-black.text-error)</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum neque asperiores officia est tempore aliquam ad sapiente hic pariatur, eius eos ullam consectetur, doloremque porro possimus, debitis error illo facilis.</div>
+									</div>
+									<div class="f-1 block bg-primary text-white">
+										<h4>Блок 2 (div.f-1.block)</h4>
+										<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nesciunt explicabo omnis quidem qui in deserunt quo, iste amet, quisquam veritatis, repellendus facilis magni consequatur, quis harum nemo itaque ratione.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+		</div>
+	</section>
+	
 </body>
 </html>

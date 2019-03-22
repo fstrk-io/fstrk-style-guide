@@ -1,0 +1,223 @@
+@charset "UTF-8";
+.bg-white {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+.bg-black {
+  background-color: #333333;
+  color: #f7f7f7;
+}
+
+.bg-success {
+  background-color: #11cd86;
+  color: #f7f7f7;
+}
+
+.bg-error {
+  background-color: #f70044;
+  color: #f7f7f7;
+}
+
+.bg-warning {
+  background-color: #f6d600;
+  color: #f7f7f7;
+}
+
+.bg-info {
+  background-color: #72ceff;
+  color: #f7f7f7;
+}
+
+.bg-primary {
+  background-color: #00a0ff;
+  color: #f7f7f7;
+}
+
+.text-white {
+  color: #f7f7f7;
+}
+
+.text-black {
+  color: #333333;
+}
+
+.text-success {
+  color: #11cd86;
+}
+
+.text-error {
+  color: #f70044;
+}
+
+.text-warning {
+  color: #f6d600;
+}
+
+.text-info {
+  color: #72ceff;
+}
+
+.text-primary {
+  color: #00a0ff;
+}
+
+.f-container {
+  display: flex;
+}
+.f-container .f-1 {
+  flex: 1;
+}
+.f-container .f-2 {
+  flex: 2;
+}
+.f-container .f-3 {
+  flex: 3;
+}
+.f-container .f-4 {
+  flex: 4;
+}
+
+.block {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.block:not(.bg-white):not(.bg-black):not(.bg-primary):not(.bg-success):not(.bg-error):not(.bg-warning):not(.bg-info) {
+  background-color: #f7f7f7;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica", "Calibri", "Arial", sans-serif;
+  color: #333333;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: monospace;
+  background-color: #f2f2f2;
+  color: #00a0ff;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+b {
+  color: #4d4d4d;
+}
+
+.row {
+  flex-flow: row;
+}
+
+.column {
+  flex-flow: column;
+}
+
+section {
+  margin: 20px;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+}
+section section .header {
+  border-bottom: 2px solid #72ceff !important;
+}
+section section section .header {
+  border-bottom: 1px solid #d8f1ff !important;
+}
+section .header, section .content {
+  padding: 10px;
+}
+section .header {
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #00a0ff;
+}
+section .content {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+}
+section .content .showcase, section .content .code {
+  flex: 1;
+}
+section .content .code {
+  font-family: monospace;
+}
+section .content .showcase {
+  display: flex;
+  align-items: center;
+}
+
+#colors .content {
+  padding: 0;
+}
+#colors .showcase {
+  width: 100%;
+  flex-flow: row wrap;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+#colors .showcase div {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 20px;
+  flex: 1;
+  height: 150px;
+}
+#colors .showcase div.color {
+  cursor: pointer;
+  transition: 0.1s all;
+}
+#colors .showcase div.color:hover {
+  filter: brightness(1.1);
+}
+#colors .showcase div.color:active {
+  filter: brightness(0.95);
+}
+#colors .showcase div.color:active:after {
+  content: "Скопировано!";
+}
+
+#grid-flex {
+  width: 100%;
+}
+
+.colorized-f-container {
+  width: 100%;
+}
+.colorized-f-container div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.colorized-f-container.row div {
+  height: 200px;
+  border-right: 2px solid #eaeaea;
+}
+.colorized-f-container.row div:nth-last-child(1) {
+  border-right: none;
+}
+.colorized-f-container.column {
+  height: 400px;
+}
+.colorized-f-container.column div {
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #eaeaea;
+}
+.colorized-f-container.column div:nth-last-child(1) {
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=styleguide-page.css.map */

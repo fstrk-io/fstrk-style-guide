@@ -1,0 +1,89 @@
+.bg-white {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+.bg-black {
+  background-color: #333333;
+  color: #f7f7f7;
+}
+
+.bg-success {
+  background-color: #11cd86;
+  color: #f7f7f7;
+}
+
+.bg-error {
+  background-color: #f70044;
+  color: #f7f7f7;
+}
+
+.bg-warning {
+  background-color: #f6d600;
+  color: #f7f7f7;
+}
+
+.bg-info {
+  background-color: #72ceff;
+  color: #f7f7f7;
+}
+
+.bg-primary {
+  background-color: #00a0ff;
+  color: #f7f7f7;
+}
+
+.text-white {
+  color: #f7f7f7;
+}
+
+.text-black {
+  color: #333333;
+}
+
+.text-success {
+  color: #11cd86;
+}
+
+.text-error {
+  color: #f70044;
+}
+
+.text-warning {
+  color: #f6d600;
+}
+
+.text-info {
+  color: #72ceff;
+}
+
+.text-primary {
+  color: #00a0ff;
+}
+
+.f-container {
+  display: flex;
+}
+.f-container .f-1 {
+  flex: 1;
+}
+.f-container .f-2 {
+  flex: 2;
+}
+.f-container .f-3 {
+  flex: 3;
+}
+.f-container .f-4 {
+  flex: 4;
+}
+
+.block {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.block:not(.bg-white):not(.bg-black):not(.bg-primary):not(.bg-success):not(.bg-error):not(.bg-warning):not(.bg-info) {
+  background-color: #f7f7f7;
+}
+
+/*# sourceMappingURL=fstrk-styles.css.map */

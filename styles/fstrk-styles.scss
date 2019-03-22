@@ -1,0 +1,101 @@
+$white: #f7f7f7;
+$black: #333333;
+$primary: #00a0ff;
+$success: #11cd86;
+$error: #f70044;
+$warning: #f6d600;
+$info: #72ceff;
+
+.bg-white {
+	background-color: $white;
+	color: $black;
+}
+
+.bg-black {
+	background-color: $black;
+	color: $white;
+}
+
+.bg-success {
+	background-color: $success;
+	color: $white;
+}
+
+.bg-error {
+	background-color: $error;
+	color: $white;
+}
+
+.bg-warning {
+	background-color: $warning;
+	color: $white;
+}
+
+.bg-info {
+	background-color: $info;
+	color: $white;
+}
+
+.bg-primary {
+	background-color: $primary;
+	color: $white;
+}
+
+.text-white {
+	color: $white;
+}
+
+.text-black {
+	color: $black;
+}
+
+.text-success {
+	color: $success;
+}
+
+.text-error {
+	color: $error;
+}
+
+.text-warning {
+	color: $warning;
+}
+
+.text-info {
+	color: $info;
+}
+
+.text-primary {
+	color: $primary;
+}
+
+.f-container {
+	display: flex;
+
+	.f-1 {
+		flex: 1;
+	}
+
+	.f-2 {
+		flex: 2;
+	}
+
+	.f-3 {
+		flex: 3;
+	}
+
+
+	.f-4 {
+		flex: 4;
+	}
+}
+
+.block {
+	padding: 20px;
+	margin: 10px;
+	border-radius: 8px;
+
+	&:not(.bg-white):not(.bg-black):not(.bg-primary):not(.bg-success):not(.bg-error):not(.bg-warning):not(.bg-info) {
+		background-color: $white;
+	}
+}
