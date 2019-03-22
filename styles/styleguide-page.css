@@ -87,6 +87,14 @@
   background-color: #f7f7f7;
 }
 
+.row {
+  flex-flow: row;
+}
+
+.column {
+  flex-flow: column;
+}
+
 body {
   font-family: "Open Sans", "Helvetica", "Calibri", "Arial", sans-serif;
   color: #333333;
@@ -107,14 +115,6 @@ code {
 
 b {
   color: #4d4d4d;
-}
-
-.row {
-  flex-flow: row;
-}
-
-.column {
-  flex-flow: column;
 }
 
 section {
