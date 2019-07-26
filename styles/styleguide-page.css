@@ -26,7 +26,7 @@
 }
 
 .bg-info {
-  background-color: #72ceff;
+  background-color: #2acfec;
   color: #f7f7f7;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .text-info {
-  color: #72ceff;
+  color: #2acfec;
 }
 
 .text-primary {
@@ -125,10 +125,10 @@ section {
   flex-flow: column;
 }
 section section .header {
-  border-bottom: 2px solid #72ceff !important;
+  border-bottom: 2px solid #2acfec !important;
 }
 section section section .header {
-  border-bottom: 1px solid #d8f1ff !important;
+  border-bottom: 1px solid #88e4f4 !important;
 }
 section .header, section .content {
   padding: 10px;
